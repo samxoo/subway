@@ -7,5 +7,5 @@ const bytecode = '0x' + fs.readFileSync(path.join(OUT_DIR, "sandwich.bytecode"),
   encoding: "ascii",
 });
 
-// console.log(ethers.utils.defaultAbiCoder.encode(["bytes"], [bytecode]).replace('0x', ''));
+ console.log(ethers.utils.defaultAbiCoder.encode(["bytes"], [bytecode]).replace('0x', ''));
 process.stdout.write(ethers.utils.defaultAbiCoder.encode(["bytes"], [bytecode]))
